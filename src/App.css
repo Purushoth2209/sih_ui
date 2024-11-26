@@ -40,8 +40,6 @@ html, body {
   z-index: 1000; /* Make sure the button appears above the map */
 }
 
-
-
 .back-button:hover {
   background-color: #8a7d7d;
 }
