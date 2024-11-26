@@ -1,0 +1,108 @@
+html, body {
+  height: 100%; /* Ensure the entire viewport height is utilized */
+  margin: 0;
+  position: relative;
+}
+#root{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  position: relative;
+}
+
+/* Make sure the map container has a relative position for absolute positioning */
+.map-container {
+  position: relative;
+  height: 100%; /* Make sure the map fills the container */
+  width: 100%;
+}
+
+/* Style for the Back button */
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 0px;  /* Position the button slightly below the top */
+  transform: translateX(-50%);  /* Center the button horizontally */
+  padding: 10px;
+  width: 70px;
+  background-color: #9b9898;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;  /* Set the border color to #f42626 */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000; /* Make sure the button appears above the map */
+}
+
+
+
+.back-button:hover {
+  background-color: #8a7d7d;
+}
+
+.sidebar {
+  width: 300px; /* Fixed width for sidebar */
+  background-color: #4477aa;
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.sidebar li:nth-child(1) {
+  background-color: #585b5f;
+}
+
+.sidebar li:nth-child(2) {
+  background-color: #585b5f;
+}
+
+.sidebar li:nth-child(3) {
+  background-color: #585b5f;
+}
+
+.sidebar li:nth-child(4) {
+  background-color: #585b5f;
+}
+
+.sidebar li:nth-child(5) {
+  background-color: #585b5f;
+}
+
+.sidebar li:nth-child(6) {
+  background-color: #585b5f;
+}
+
+.sidebar li:hover {
+  background-color: #585b5f;
+}
+
+.sidebar li.selected {
+  background-color: #585b5f;
+  font-weight: bold;
+  border-color: #ccc;
+}
